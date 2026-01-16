@@ -1,0 +1,173 @@
+/* 全体 */
+body {
+   margin: 0;
+  background: radial-gradient(#3b1457, #14001f);
+  font-family: 'Orbitron', 'Noto Sans JP', sans-serif;
+  overflow: hidden;
+}
+
+.game-ui {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* 画面全体の要素を少し中央に寄せるためのコンテナ設定 */
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* タイトル：サイズアップと位置調整 */
+.title {
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+  color: #bffcff;
+  font-size: 72px;
+  margin-top: 50px;
+  letter-spacing: 4px;
+
+  text-shadow:
+    6px 6px #f5d94c,
+    12px 12px #1b0f3a;
+}
+
+/* モード選択：ボタンを大きく、間隔を広く */
+.modes {
+  position: absolute;
+  left: 80px; /* 少し内側へ */
+  top: 140px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* 間隔を広げた */
+  z-index: 5;
+}
+
+.mode {
+  background: none; /* 背景を消す */
+  border: none;     /* 枠線を消す */
+  padding: 0;
+  cursor: pointer;
+  width: 520px;     /* 画像の横幅に合わせて調整 */
+  transition: transform 0.1s, filter 0.2s;
+ 
+}
+.mode img{
+    width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: pixelated; /* ドットをくっきりさせる */
+
+}
+
+.mode:hover {
+  transform: scale(1.03) translateX(10px); /* 右に少しズラすと操作感が出ます */
+  filter: brightness(1.2) drop-shadow(0 0 15px rgba(153, 255, 255, 0.4));
+}
+.mode:active {
+    transform: scale(0.98) translateY(4px);
+  
+}
+.mode.boost { border-color: #ffd84a; color: #ffd84a; }
+.mode.ignition { border-color: #7cff7c; color: #7cff7c; }
+
+/* ================================
+   MODE INFO PANEL（テレビ）
+================================ */
+.info-panel {
+  position: absolute;
+  right: 100px;
+  top: 110px;
+
+  width: 650px;  /* 460px -> 650px */
+  height: 450px; /* 320px -> 450px */
+
+  background-image: url("テレビ.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  padding: 70px 90px; /* 余白を増やして画面内に収める */
+  box-sizing: border-box;
+
+  color: #e6eaff;
+  font-size: 20px; /* 14px -> 20px */
+
+  filter: drop-shadow(0 0 20px rgba(140,120,255,0.6));
+}
+
+.info-title {
+   font-family: 'Press Start 2P', monospace;
+  font-size: 22px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  color: #bffcff;
+  letter-spacing: 2px;
+
+  text-shadow:
+    0 0 6px rgba(150, 200, 255, 0.8),
+    2px 2px #1b0f3a;
+}
+
+.info-text {
+  font-family: 'Orbitron', 'Noto Sans JP', sans-serif;
+  font-size: 18px;
+  line-height: 1.9;
+  letter-spacing: 0.08em;
+  padding-left: 30px;
+
+  color: #e6eaff;
+  text-shadow: 1px 1px #1b0f3a;
+}
+
+/* ================================
+   コントローラー（土台を高く）
+================================ */
+.controller {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px; /* 200px -> 280px */
+  background: #55aee6;
+  border-top: 6px solid #3d8dbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+/* レバーとボタン：一律サイズアップ */
+.joystick {
+  margin-top: -30px; /* 微調整 */
+  height: 150px; /* 140px -> 200px */
+}
+
+.btn {
+  height: 120px; /* 110px -> 160px */
+  cursor: pointer;
+  transition: transform 0.1s;
+}
+
+/* PLAYボタン（画像版） */
+.play-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 280px; /* 240px -> 320px */
+  transition: transform 0.1s;
+}
+
+.play-btn img {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+.btn:active, .play-btn:active {
+  transform: translateY(6px);
+}
+.game-ui {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* 土台が低くなった分、下の余白を調整 */
+  background-size: cover;
+}

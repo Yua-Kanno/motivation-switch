@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Motivex UI</title>
+
+  <!-- フォント読み込み -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Orbitron:wght@400;600&family=Noto+Sans+JP:wght@500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-ui">
+
+    <!-- タイトル -->
+    <h1 class="title">Motivex</h1>
+
+    <!-- 左：モード選択 -->
+    <div class="modes">
+      <button class="mode normal" data-mode="normal">
+        <img src="ノーマル.png" alt="NORMAL MODE">
+      </button>
+      <button class="mode boost" data-mode="boost">
+        <img src="ブースト.png" alt="BOOST MODE">
+      </button>
+      <button class="mode ignition" data-mode="ignition">
+        <img src="イグニッション.png" alt="IGNITION MODE">
+      </button>
+    </div>
+
+    <!-- 右：モード説明 -->
+    <div class="info-panel">
+      <p class="info-title" id="infoTitle">MODE INFO PANEL</p>
+      <p class="info-text" id="infoText">
+        Select a mode to see details.
+      </p>
+    </div>
+
+    <!-- 下部コントローラー -->
+    <div class="controller">
+      <img src="ボタン.png" class="joystick" alt="joystick">
+      <img src="緑ボタン.png" class="btn green" alt="green button">
+      <img src="赤いボタン.png" class="btn red" alt="red button">
+
+      <button class="play-btn">
+        <img src="プレイボタン.png" alt="PLAY">
+      </button>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
