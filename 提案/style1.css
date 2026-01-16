@@ -199,9 +199,9 @@ body {
 
 /* START: FINISH: の文字（ドット絵風ピンク） */
 .date-wrap label {
-  font-family: 'DotGothic16', sans-serif !important;
-  color: #cd3378 !important; /* 濃いめのピンク */
-  font-size: 12px !important;
+  font-family: 'Press Start 2P', sans-serif !important;
+  color: #6ec5f0 !important; /* 濃いめのピンク */
+  font-size: 18px !important;
   margin-bottom: 4px;
   display: block;
   text-transform: uppercase;

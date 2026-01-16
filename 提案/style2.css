@@ -8,13 +8,14 @@
 body {
   margin: 0;
   height: 100vh;
+  /* 最後に !important を追加 */
   background: linear-gradient(
     180deg,
-    #0b4fa3 0%,    /* 上：濃い澄んだ青空 */
-    #0f6ec7 40%,   /* 中：鮮やかな青 */
-    #4fa3e3 65%,   /* 下寄り：明るい空色 */
-    #bcdcf6 100%   /* 最下部：霞んだ水色 */
-  );
+    #0b4fa3 0%,
+    #0f6ec7 40%,
+    #4fa3e3 65%,
+    #bcdcf6 100%
+  ) !important; 
   overflow: hidden;
 }
 
@@ -203,8 +204,8 @@ body {
 
 /* START: FINISH: の文字（ドット絵風ピンク） */
 .date-wrap label {
-  font-family: 'DotGothic16', sans-serif !important;
-  color: #e84d0b !important; /* 濃いめのピンク */
+  font-family: 'Press Start 2P', sans-serif !important;
+  color: #edf16e !important; /* 濃いめのピンク */
   font-size: 18px !important;
   margin-bottom: 4px;
   display: block;
