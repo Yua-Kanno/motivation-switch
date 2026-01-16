@@ -61,7 +61,7 @@ function sendMessage() {
 ;
     } else {
       // タスク登録時はシンプルにこれだけ
-      botMsg.textContent = "ミッションを登録したよ！";
+      botMsg.textContent = "ミッションを確認！！";
       addMissionToList(text);
       // ★ ここにあった応援メッセージのsetTimeoutを削除しました
     }
