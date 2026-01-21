@@ -18,7 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
   let progressStep = 0;
 
   // IGNITION用セリフ
-  const achieveMessages = ["点火維持。ターゲット撃破。次を実行せよ。", "出力上昇。お前の限界はそこではない。🔥", "任務完了。次フェーズへ。"];
+  // IGNITION用セリフ（バリエーション増量版）
+  const achieveMessages = [
+    "点火維持。ターゲット撃破。次を実行せよ。",
+    "出力上昇。お前の限界はそこではない。🔥",
+    "任務完了。次フェーズへ。",
+    "凄まじい集中力だ。そのまま焼き尽くせ。",
+    "順調な推移だ。この熱量を絶やすな。",
+    "敵（タスク）は残りわずか。一気に制圧しろ。🗡️",
+    "加速しろ。思考を止めるな。",
+    "素晴らしい。予定通りの戦果だ。",
+    "限界を超えた先を見せてみろ。点火継続！",
+    "お前の執念、データに刻んだ。次だ。"
+  ];
 
   const savedMode = localStorage.getItem('selectedMotivexMode') || 'ignition';
   if (modeDisplay) modeDisplay.textContent = `MODE: ${savedMode.toUpperCase()}`;
