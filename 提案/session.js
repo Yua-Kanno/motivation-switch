@@ -18,7 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
   let progressStep = 0;
 
   // BOOST用セリフ
-  const achieveMessages = ["ナイス達成！さらに加速していこう！⚡", "一段突破！君の集中力、本物だね！🔥", "成功だ！この勢いで次もいっちゃおう！"];
+  const achieveMessages = [
+  "ナイス達成！さらに加速していこう！⚡",
+  "一段突破！君の集中力、本物だね！🔥",
+  "成功だ！この勢いで次もいっちゃおう！",
+  "その調子！ゾーンに入ってきたね！🚀",
+  "完璧なリズム！次もサクッと終わらせちゃおう！✨",
+  "一歩前進！着実にゴールが近づいてるよ！🚩",
+  "最高。そのまま突き進もう！🎯",
+  "加速が止まらない！この波に乗っていこう！🌊",
+  "さすがだね！積み重ねた努力が形になってる！💎",
+  "集中力、神レベル！👾"
+];
 
   const savedMode = localStorage.getItem('selectedMotivexMode') || 'boost';
   if (modeDisplay) modeDisplay.textContent = `MODE: ${savedMode.toUpperCase()}`;
