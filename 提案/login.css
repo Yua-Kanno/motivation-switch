@@ -1,0 +1,114 @@
+/* 全体の設定 */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #e5ebf1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* 右上のエリア - 少し大きく */
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 60px;
+    gap: 25px;
+}
+
+.top-nav span {
+    font-size: 16px; /* 14px -> 16px */
+    font-weight: 800;
+    color: #000;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 16px 50px; /* 少し太く */
+    border-radius: 50px;
+    font-weight: 800;
+    cursor: pointer;
+    font-size: 16px; /* 14px -> 16px */
+}
+
+/* メインレイアウト - 間隔を広く */
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    gap: 120px; /* 80px -> 120px */
+    padding-bottom: 50px;
+}
+
+/* ロゴのサイズアップ */
+.game-logo {
+    max-width: 600px; /* 450px -> 550px */
+    height: auto;
+    filter: drop-shadow(0 15px 25px rgba(0,0,0,0.1));
+}
+
+/* フォーム全体のサイズアップ */
+.login-form {
+    width: 450px; /* 380px -> 450px */
+    text-align: center;
+}
+
+/* 指定フォント Passion One の適用 */
+.welcome-text {
+    font-family: 'Passion One', cursive; /* Passion One を適用 */
+    font-size: 48px; /* 24px -> 48px (大きく) */
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #000;
+    letter-spacing: 1px;
+}
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* 15px -> 20px */
+    margin-bottom: 40px;
+}
+
+.input-box {
+    width: 100%;
+    padding: 22px; /* 18px -> 22px */
+    border: none;
+    background-color: #fff;
+    font-size: 20px; /* 16px -> 20px */
+    font-weight: 800;
+    text-align: center;
+    box-sizing: border-box;
+    color: #000;
+}
+
+.input-box::placeholder {
+    color: #000;
+}
+
+/* 赤いボタンのサイズアップ */
+.btn-red-signin {
+    width: 100%;
+    max-width: 350px; /* 280px -> 350px */
+    background-color: #cd5c5c;
+    color: #fff;
+    border: none;
+    padding: 22px; /* 20px -> 22px */
+    border-radius: 70px;
+    font-size: 22px; /* 18px -> 22px */
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-red-signin:hover {
+    background-color: #bc4b4b;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(205, 92, 92, 0.4);
+}
